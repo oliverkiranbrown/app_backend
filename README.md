@@ -1,4 +1,9 @@
-# ess-matrix-conf-2025
+# `<app name>` Backend Setup for local development
+
+## Background
+
+With murmr, we're firmly committed to our user's digital soverignity and want to embed these values in the stack of technologies we use to develop our application. Given these values, rather than locking our user's data away in a private database, we'll use the [matrix] protocol's free and open-source Element Server Suite. 
+
 
 ## Single Node Kubernetes Clusters
 
