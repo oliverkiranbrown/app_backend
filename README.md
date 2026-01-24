@@ -4,6 +4,8 @@
 
 With murmr, we're firmly committed to our user's digital soverignity and want to embed these values in the stack of technologies we use to develop our application. Given these values, rather than locking our user's data away in a private database, we'll use the [matrix] protocol's free and open-source Element Server Suite. 
 
+To set yourself up for local development, please follow the guide below:
+
 
 ## Single Node Kubernetes Clusters
 
@@ -142,7 +144,7 @@ secret/ess-admin-certificate created
 
 ```bash
 cd demo-values
-helm upgrade --install --namespace "ess" ess oci://ghcr.io/element-hq/ess-helm/matrix-stack -f hostnames.yaml  -f tls.yaml -f auth.yaml -f mrtc.yaml -f pull-policy.yml --wait
+helm upgrade --install --namespace "ess" ess oci://ghcr.io/element-hq/ess-helm/matrix-stack -f hostnames.yaml  -f tls.yaml -f auth.yaml -f mrtc.yaml --wait
 cd -
 ```
 

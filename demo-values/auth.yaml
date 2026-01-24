@@ -10,9 +10,14 @@ matrixAuthenticationService:
 
 synapse:
   additional:
+    homeserver.yaml:
+      config: |
+        enable_registration: true
+        enable_registration_without_verification: true
     user-directory.yaml:
       config: |
         user_directory:
           enabled: true
           search_all_users: true
           prefer_local_users: true
+        
